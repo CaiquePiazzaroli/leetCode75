@@ -11,6 +11,7 @@ public class Exercise01Problem933 {
     }
     
     public int ping(int t) {
+        // Can be refactored
         this.calls.offer(t);
 
         int baseInterval = t - 3000;
@@ -21,7 +22,7 @@ public class Exercise01Problem933 {
         .filter(e -> e <= topInteval)
         .toList()
         .size();
-        
+
         return result;
     }
 }
